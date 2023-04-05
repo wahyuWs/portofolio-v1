@@ -54,7 +54,7 @@
                 </div>
                 <div class="col-md-12 mb-4">
                     <div class="detail-v1">
-                    <span class="detail-label">Roles</span>
+                    <span class="detail-label">Role</span>
                     <span class="detail-val"><a href="#">Identity</a>, <a href="#">Web Design</a></span>
                     </div>
                 </div>

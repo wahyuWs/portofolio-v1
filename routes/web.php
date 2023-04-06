@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AddContentController;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PortofolioController;
 use Illuminate\Support\Facades\Route;
 
@@ -21,3 +22,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [PortofolioController::class, 'index']);
 Route::resource('content', PortofolioController::class);
 Route::get('/add/content', [AddContentController::class, 'index']);
+Route::get('/login', [AuthController::class, 'index']);

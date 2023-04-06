@@ -23,7 +23,7 @@
             position: absolute;
             transform: translate(-50%, -50%);
             box-sizing: border-box;
-            border-radius: 25px;
+            border-radius: 28px;
             padding: 70px 30px
         }
         

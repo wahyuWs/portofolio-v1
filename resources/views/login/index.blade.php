@@ -97,15 +97,14 @@
         <div class="loginbox">
             <img src="images/iconlogin.png" class="avatar">
             <h1>Login Here</h1>
-            <form>
-                <p>Username</p>
-                <input type="text" name= "" placeholder="Enter Username" required>
+            <form method="post" action="/auth">
+                @csrf
+                <p>Email</p>
+                <input type="text" id="email" name= "email" placeholder="Enter Email" required>
                 <p>Password</p>
-                <input type="Password" name="" placeholder="Enter Password" required>
-                <input type="submit" name="" value="Login"><br>
+                <input type="Password" id="password" name="password" placeholder="Enter Password" required>
+                <input type="submit" value="Login"><br>
                 <a href="#">Forget your Password?</a><br>
-                <a href="JS Exercise File\Registration page\Registration.html">Don't have account?</a>
-
             </form>
         </div>
     </body>

@@ -19,7 +19,9 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('content.home.index');
 // });
+Route::get('/login', [AuthController::class, 'index'])->name('login');
+Route::post('/auth', [AuthController::class, 'auth']);
+
 Route::get('/', [PortofolioController::class, 'index']);
-Route::resource('content', PortofolioController::class);
-Route::get('/add/content', [AddContentController::class, 'index']);
-Route::get('/login', [AuthController::class, 'index']);
+Route::resource('home', PortofolioController::class);
+Route::resource('add', AddContentController::class)->middleware('auth');

@@ -49,7 +49,8 @@
 	</style>
 </head>
 <body>
-    <form action="#" method="POST" enctype="multipart/form-data">
+    <form action="{{ route('add.store') }}" method="POST" enctype="multipart/form-data">
+		@csrf
 		<label for="judul">Judul:</label>
 		<input type="text" id="name" name="name" required>
 
@@ -59,7 +60,7 @@
         <label for="judul">Url App:</label>
 		<input type="text" id="url" name="url" required>
 
-		<label for="gambar">Gambar:</label>
+		<label for="gambar">File:</label>
 		<input type="file" id="picture_path" name="picture_path" accept="image/*" required>
 
 		<label for="deskripsi">Deskripsi:</label>
